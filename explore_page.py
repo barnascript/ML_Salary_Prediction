@@ -76,3 +76,4 @@ def show_explore_page():
    st.write("Mean Salary Based On Experience")
    data = df.groupby(["YearsCodePro"])["Salary"].mean().sort_values(ascending=True)
    st.line_chart(data)
+   return data
